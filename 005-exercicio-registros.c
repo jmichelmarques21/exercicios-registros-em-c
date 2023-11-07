@@ -1,3 +1,15 @@
+/* Exercício 05 - Escreva um programa que simule contas bancárias com as seguintes especificações: 
+Ao iniciar o programa deverá ser criado uma estrutura para as contas bancárias contendo o número da conta, o nome do titular da conta e o saldo.
+Devem ser cadastrados 3 clientes diretamente no programa, com saldo inicial de 0. 
+Crie um menu para o programa com as seguintes opções:
+[1] Listagem de clientes
+[2] Depósito
+[3] Saque
+[4] Fim
+Para cada depósito ou saque realizado, deverá ser mostrado o nome do titular e o saldo atualizado. 
+O programa não deve permitir saques com valores superiores ao saldo atual docliente. */
+
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -17,9 +29,9 @@ int main(){
 	float deposito, saque;
 	
 	for(i = 0; i < 3; i++){
-		printf("\nInforme o n�mero da conta: ");
+		printf("\nInforme o número da conta: ");
 		scanf("%d", &conta[i].numConta);
-		printf("Informe o nome do t�tular: ");
+		printf("Informe o nome do títular: ");
 		scanf(" %30[^\n]", conta[i].nome);
 		printf("Informe o saldo inicial da conta: ");
 		scanf("%f", &conta[i].saldo);
@@ -29,11 +41,11 @@ int main(){
 	
 	printf("\n\n");
 	printf("[1] - Listagem de clientes\n");
-	printf("[2] - Dep�sito\n");
+	printf("[2] - Depósito\n");
 	printf("[3] - Saque\n");
 	printf("[4] - Fim\n");
 	
-	printf("\nDigite o n�mero da opera��o desejada: ");
+	printf("\nDigite o número da operação desejada: ");
 	
 	scanf("%d", &op);
 	
@@ -47,14 +59,14 @@ int main(){
 		
 			case 2: 
 				for(i = 0; i < 3; i++) {
-					printf("\nInforme o valor do dep�sito: ");
+					printf("\nInforme o valor do depósito: ");
 					scanf("%f", &deposito);
 					conta[i].saldo += deposito;
 				}
 				for (i = 0; i < 3; i++) {
 					printf("\n");
-					printf("\nN�mero da conta: %d", conta[i].numConta);
-					printf("\nT�tular da conta: %s", conta[i].nome);
+					printf("\nNúmero da conta: %d", conta[i].numConta);
+					printf("\nTítular da conta: %s", conta[i].nome);
 					printf("\nSaldo atualizado: R$%.2f", conta[i].saldo);
 				}
 			break;
@@ -67,7 +79,7 @@ int main(){
 						printf("\nSaldo insuficiente!");
 					} else {
 						conta[i].saldo -= saque;
-						printf("\nO novo saldo � de R$%.2f", conta[i].saldo);
+						printf("\nO novo saldo é de R$%.2f", conta[i].saldo);
 					}
 				}
 			break;
