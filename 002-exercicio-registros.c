@@ -1,3 +1,8 @@
+/* Exercício 02 - Suponha que você está fazendo uma pesquisa de preços para a compra de um tablet. Para auxiliá-lo, escreva um programa que permita o 
+cadastro de cinco registros, cada um contendo o nome de umaloja e o preço do tablet naquela loja. O programa deve calcular a média dos preços e mostrar uma 
+relação contendo o nome lojas que tenham o tablet com preço abaixo da média. */
+
+
 #include<stdio.h>
 #include<locale.h>
 
