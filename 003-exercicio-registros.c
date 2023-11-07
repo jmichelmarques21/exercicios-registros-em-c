@@ -1,3 +1,7 @@
+/* Exerc√≠cio 03 - Crie uma estrutura representando um atleta. Essa estrutura deve conter o nome do atleta, seuesporte, idade e altura. 
+Em seguida, leia os dados de 5 atletas. Calcule e exiba os nomes do atleta maisalto e do atleta mais velho. */
+
+
 #include<stdio.h>
 #include<locale.h>
 #include<string.h>
@@ -43,8 +47,8 @@ int main(){
 		}
 	}
 	
-	printf("O atleta mais velho È o %s com %d anos de idade.", nomeMaisVelho, maisVelho);
-	printf("\nO atleta mais alto È o %s com %.2fm de altura.", nomeMaisAlto, maisAlto);
+	printf("O atleta mais velho √© o %s com %d anos de idade.", nomeMaisVelho, maisVelho);
+	printf("\nO atleta mais alto √© o %s com %.2fm de altura.", nomeMaisAlto, maisAlto);
 	
 	
 	return 0;
