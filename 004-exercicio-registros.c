@@ -1,3 +1,8 @@
+/* Exerc铆cio 04 - Crie uma estrutura com o c贸digo e a quantidade em estoque de 5 produtos. Em seguida, leia umpedido composto por um c贸digo de produto e quantidade. 
+Se houver quantidade suficiente para atender ao pedido integralmente, atualize a quantidade em estoque do produto e apresente amensagem "Estoque atualizado", 
+caso contr谩rio, apresente a mensagem "Quantidade insuficiente emestoque". */
+
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -19,7 +24,7 @@ int main(){
 	int i;
 	
 	for(i = 0; i < 5; i++) {
-		printf("\nInforme o c骴igo do produto: ");
+		printf("\nInforme o c贸digo do produto: ");
 		scanf("%d", &stock[i].codigo);
 		printf("Informe a quantidade em estoque: ");
 		scanf("%d", &stock[i].quantidade);		
@@ -28,7 +33,7 @@ int main(){
 	struct Pedido order[1];
 	
 	for (i = 0; i < 1; i++) {
-		printf("\nInforme o c骴igo do produto: ");
+		printf("\nInforme o c贸digo do produto: ");
 		scanf("%d", &order[i].codigo);
 		printf("Informe a quantidade comprada: ");
 		scanf("%d", &order[i].quantidade);
