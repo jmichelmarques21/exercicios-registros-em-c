@@ -1,3 +1,7 @@
+/* Exercício 01 - Crie uma estrutura representando um aluno de uma disciplina. Essa estrutura deve conter o nome do aluno, 
+	o nome da disciplina e as notas do aluno em duas provas. Em seguida, leia os dados de trêsalunos e os armazena nessa estrutura. 
+	Por fim, exiba o nome do aluno, o nome da disciplina e a médiados alunos que foram aprovados com média igual ou superior a 6. */
+
 #include<stdio.h>
 #include<locale.h>
 
@@ -35,7 +39,7 @@ int main(){
 		if (((alunos[i].nota1 + alunos[i].nota2) / 2) >= 6.0) {
 			printf("\nAluno: %s", alunos[i].nome);
 			printf("\nDisciplina: %s", alunos[i].disciplina);
-			printf("\nM�dia: %.2f", (alunos[i].nota1 + alunos[i].nota2)/ 2);
+			printf("\nMédia: %.2f", (alunos[i].nota1 + alunos[i].nota2)/ 2);
 		}
 	}
 	
